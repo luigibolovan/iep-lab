@@ -1,4 +1,4 @@
-#Enunt
+# Enunt
 
 Sa se scrie un proiect C++ care sa acopere principalele problemele descrise in urmatoarele item-uri, din cartea Effective ++:
 
