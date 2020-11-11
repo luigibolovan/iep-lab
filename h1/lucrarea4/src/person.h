@@ -9,12 +9,16 @@ class Person
         int id;
         std::string name;
         std::string email;
+        
+        // item 6: explicitly disable the use of compiler generated functions you do not want
+        Person& operator=(const Person&);
+    
     public:
-       Person(){ std::cout << "Default constructor called" << std::endl; }
        Person(int id, std::string name, std::string mail);
-       // item 6: explicitly disable the use of compiler generated functions you do not want
-       Person& operator=(const Person&);
        Person(const Person& copyPerson){ std::cout << "Copy constructor called" << std::endl;}
+
+       std::string getName() { return name; }
+       std::string getEmail() { return email; }
 };
 
 #endif
