@@ -19,7 +19,7 @@ RegularCar& RegularCar::operator=(const RegularCar& newCar)
     this->trunkCapacity = newCar.trunkCapacity;
     
     Engine *currentEng = this->engine; 
-    this->engine = newCar.engine;      
+    this->engine = new Engine(*newCar.engine);      
     delete currentEng;                 
 
     return *this; // item 10: Have assignment operators return a reference to *this.
