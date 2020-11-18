@@ -19,6 +19,14 @@ int main()
     FrunkCar tesla3(2019, "Tesla Model 3", 321, engineTesla3, 100);
     FrunkCar teslaS(2017, "Tesla Model S", 400, engineTeslaS, 122);
 
+    mazda3G = mazda3G;
+    std::cout << "\nModel: " << mazda3G.getModelName() << std::endl;
+    std::cout << "Year: " << mazda3G.getYear() << std::endl;
+    std::cout << "Engine power: " << mazda3G.getEngineHP() << std::endl;
+    std::cout << "Engine manufacturer: " << mazda3G.getEngineManufacturer() << std::endl;
+    std::cout << "Trunk capacity: " << mazda3G.getTrunkCapacity() << std::endl;
+
+
 
     mazda3G = mazda3X;
     std::cout << "\nModel: " << mazda3G.getModelName() << std::endl;
@@ -26,6 +34,9 @@ int main()
     std::cout << "Engine power: " << mazda3G.getEngineHP() << std::endl;
     std::cout << "Engine manufacturer: " << mazda3G.getEngineManufacturer() << std::endl;
     std::cout << "Trunk capacity: " << mazda3G.getTrunkCapacity() << std::endl;
+
+
+
 
     tesla3 = teslaS;
     std::cout << "\nModel: " << tesla3.getModelName() << std::endl;
